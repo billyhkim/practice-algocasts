@@ -1,0 +1,24 @@
+{
+  "name": "practice-algocasts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "jest exercises/reversestring/test.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/billyhkim/practice-algocasts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/billyhkim/practice-algocasts/issues"
+  },
+  "homepage": "https://github.com/billyhkim/practice-algocasts#readme",
+  "dependencies": {
+    "eslint": "^6.4.0",
+    "jest": "^24.9.0"
+  }
+}
