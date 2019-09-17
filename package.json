@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "jest exercises/fizzbuzz/test.js --watch"
+    "start": "jest exercises/chunk/test.js --watch"
   },
   "repository": {
     "type": "git",
