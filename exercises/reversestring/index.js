@@ -12,9 +12,17 @@ function reverse(str) {
 
   // method 2 without reverse method
   // use a for loop to iterate backwards thru the string and concat it to some variable
+  // let reversedStr = '';
+  // for (let i = str.length - 1; i >= 0; i--) {
+  //   reversedStr += str[i];
+  // }
+  // return reversedStr;
+
+  // method 3 by concatting in front
   let reversedStr = '';
-  for (let i = str.length - 1; i >= 0; i--) {
-    reversedStr += str[i];
+  for (let character of str) {
+    reversedStr = character + reversedStr;
+    console.log(reversedStr);
   }
   return reversedStr;
 }
