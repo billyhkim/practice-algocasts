@@ -8,7 +8,8 @@
 //   palindrome("abcdefg") === false
 
 function palindrome(str) {
-  let reversedStr = str.split('').reverse().join('');
+  // method 1
+  // let reversedStr = str.split('').reverse().join('');
   
   // if (str === reversedStr) {
   //   return true;
@@ -17,7 +18,13 @@ function palindrome(str) {
   // }
 
   // more efficient comparison return
-  return str === reversedStr;
+  // return str === reversedStr;
+
+  // method 2 using every array helper method
+  // not preferred way, however interesting approach in comparing str character to its mirror
+  return str.split('').every((character, index) => {
+    return character === str[str.length - index - 1]
+  })
 }
 
 module.exports = palindrome;
