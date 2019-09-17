@@ -11,10 +11,16 @@
 function reverseInt(n) {
   // method 1, accounting for negative that gets dropped on reverse
   const reversedNumStr = n.toString().split('').reverse().join('');
-  if (n < 0) {
-    return parseInt(reversedNumStr) * -1;
-  }
-  return parseInt(reversedNumStr);
+  
+  // this conditional is expensive
+  // if (n < 0) {
+  //   return parseInt(reversedNumStr) * -1;
+  // }
+  // return parseInt(reversedNumStr);
+
+  // efficient using Math.sign
+
+  return parseInt(reversedNumStr) * Math.sign(n);
 }
 
 module.exports = reverseInt;
