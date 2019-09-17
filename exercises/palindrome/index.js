@@ -10,11 +10,14 @@
 function palindrome(str) {
   let reversedStr = str.split('').reverse().join('');
   
-  if (str === reversedStr) {
-    return true;
-  } else {
-    return false;
-  }
+  // if (str === reversedStr) {
+  //   return true;
+  // } else {
+  //   return false;
+  // }
+
+  // more efficient comparison return
+  return str === reversedStr;
 }
 
 module.exports = palindrome;
