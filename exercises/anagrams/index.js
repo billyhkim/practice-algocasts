@@ -8,6 +8,11 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
-function anagrams(stringA, stringB) {}
+function anagrams(stringA, stringB) {
+  let charMap = {};
+
+  let string1 = stringA.toLowerCase();
+  let string2 = stringB.toLowerCase();
+}
 
 module.exports = anagrams;
